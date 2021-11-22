@@ -1,0 +1,300 @@
+@font-face{
+    font-family:'norwester';
+    src: local('norwester'), url(../fonts/norwester.otf) format('otf')
+}
+@keyframes custom-unCollapse {
+    from{width:0px}
+    to{width:600px}
+}
+
+.problem{
+    width:100%;
+    height:95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Left side*/
+.problem__left{
+    width:10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: sticky;
+    top:40%;
+}
+.problem__leftTab{
+    width:100%;
+    text-align: center;
+    border-radius:5px;
+    margin:0px 0px 10px 0px;
+    background-color:#EEEEEE;
+    font-family: poiret;
+    font-weight: bolder;
+    padding:5px 0px 5px 0px;
+}
+.problem__statement{
+    font-family: poiret;
+    font-weight: bolder;
+    font-size: 120%;
+}
+.problem__leftTab1{
+    background-color:#EEEEEE;
+    color:black;
+}
+.problemEASY,.Accepted{
+    background-color:#B2FFB7;
+    background-size: cover;
+    height: 100%;
+}
+.problemMEDIUM,.WA{
+    background-color: #F5FFB2;
+}
+.problemHARD{
+    background-color:#ffb2b2 ;
+}
+
+
+
+/*---Left Side--*/
+
+/*Middle*/
+.problem__center{
+    width:30%;
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.problem__centerTop{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+.problem__centerTopButton{
+    width:fit-content;
+    margin:0px 15px 0px 0px;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    padding:8px 20px 8px 20px;
+    font-family: norwester;
+}
+
+.problem__centerTopButton:hover{
+    cursor: pointer;
+}
+.problem__centerTopButton > p{
+    padding:0px;
+    width:100%;
+}
+
+.active{
+    background-color:#F6E2DB;
+}
+
+.raise{
+    z-index: 1;
+}
+
+
+.problem__centerMiddle{
+    padding:10px 5px 0px 5px;
+    height:600px;
+    width:100%;
+    overflow-wrap:break-word;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+}
+.problem__centerMiddle1{
+    text-align: left;
+}
+.testCase{
+    font-family: norwester;
+    margin: 10px auto 1px auto;
+    font-size: 110%;
+}
+.tests{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.problem__centerMiddlequest{
+    font-family: norwester;
+    font-size: larger;
+    padding:0px 0px 10px 0px;
+}
+.problem__centerMiddle2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.record{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.problem__centerMiddle21{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.problem__centerMiddle22,.problem__centerMiddle23{
+    width:25%;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+
+}
+.heading{
+    font-family:norwester;
+    font-size:larger;
+}
+.results{
+    height:100px;
+    overflow-y: scroll;
+}
+.problem__centerMiddle2  p{
+    margin-bottom: 10px;
+}
+
+.page-inactive{
+    display: none;
+}
+
+/*--Middle--*/
+
+
+.problem__right{
+    width:55%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.problem__rightTop{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom:10px;
+}
+
+.problem__rightTopOption{
+    width:fit-content;
+    margin:0px 15px 0px 0px;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    padding:8px 20px 8px 20px;
+    font-family: norwester;
+}
+
+.problem__rightTopOption > p{
+    padding:0px;
+    width:100%;
+}
+.problem__rightTopOption:hover,select:hover{
+    cursor: pointer;
+}
+
+.color1{
+    background-color: #FF4600;
+    color:white;
+}
+.color2{
+    color: #FF4600;
+    background-color: #F6E2DB;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu > p{
+    padding:0px 10px 0px 10px;
+}
+
+@keyframes showMenu{
+}
+
+#menu{
+    display: none;
+}
+.custom{
+    border-radius: 2px;
+    font-family: poiret;
+    font-weight: bolder;
+    align-self: flex-end;
+}
+
+.problem__custom{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.content{
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    width:0px;
+    animation-name: custom-unCollapse;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px 0px 30px 10px;
+    font-size: 130%;
+    height:auto;
+}
+.content > textarea{
+    width:500px;
+    max-height: 100px;
+    min-height: 100px;
+    overflow: scroll;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+.content > p{
+    font-family: norwester;
+
+}
+.close{
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    right:20px;
+    top:20px;
+    padding:2px;
+}
+.close:hover{
+    cursor: pointer;
+}
+.record > p{
+    font-family: poiret;
+    font-weight:bolder;
+    
+}
+
+
