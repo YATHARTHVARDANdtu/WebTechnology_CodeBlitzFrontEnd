@@ -1,0 +1,30 @@
+@font-face {
+  font-family: norwester;
+  src: url('./fonts/norwester.otf');
+}
+@font-face {
+  font-family: poiret;
+  src: url('./fonts/poiret.ttf');
+}
+.hide{
+  display: none;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: 0px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

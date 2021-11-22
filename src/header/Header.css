@@ -1,0 +1,104 @@
+@font-face {
+    font-family: norwester;
+    src: url('../fonts/norwester.otf');
+}
+@font-face {
+    font-family: poiret;
+    src: url('../fonts/poiret.ttf');
+}
+
+.header{
+    width:100%;
+    height:5%;
+    margin-bottom:10px;
+    margin-left:0px;
+    margin-right: 0px;
+    margin-top:15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top:0px;
+    left: 0px;
+}
+
+p{
+    margin:0;
+}
+.header__navLeft{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding:0px 20px 0px 20px;
+}
+.header__navRight{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding:0px 20px 0px 20px;
+}
+
+.header__navLeftOption{
+    width:fit-content;
+    padding:5px 10px 5px 10px;
+    font-size: 130%;
+    font-family:poiret;
+    font-weight: bold;
+
+}
+.header__navLeftOption:hover{
+    cursor: pointer;
+}
+#one:hover,#two:hover,#three:hover{
+    cursor: pointer;
+    font-size: 140%;
+    border-bottom-width:2px;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: black;
+}
+.header__navRightOption{
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    font-size: 130%;
+    font-family: poiret;
+    font-weight: 800;
+    border: 1px solid rgba(0, 0, 0, 0.808);
+    border-radius: 10px;
+}
+.header__navRightOption:hover{
+    cursor: pointer;
+    background-color: #FF4600;
+    color:white;
+    border-bottom-width: 2px;
+}
+
+
+.header__navButton{
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+.header__navButton :hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+.header__navButtonLogo{
+    width:100px;
+    aspect-ratio:initial;
+}
+.header__navButtonProfile{
+    width:100%;
+    font-size: 150%;
+    border-radius: 10px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-weight: bolder;
+    padding:7px 5px 7px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0.5px rgba(255, 68, 0, 0.678) solid; 
+}
+
+

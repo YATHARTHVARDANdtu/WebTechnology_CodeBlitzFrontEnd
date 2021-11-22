@@ -1,0 +1,52 @@
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.home__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home__bodyDesc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.home__bodyDescLeft{
+    width:35%;
+}
+.home__bodyDescLeft > img{
+    width:100%;
+}
+.home__bodyDescRight{
+    width:64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__bodyDescRight > p{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.different{
+    font-size: 130%;
+    font-family: poiret;
+    font-weight: bolder;
+}
+.up{
+    margin-top: 15px;
+}
+.home__bodyDescSlogan{
+    color:#FF4600;
+    font-weight: bold;
+    font-size: 200%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+}

@@ -1,0 +1,80 @@
+
+.problem__small{
+    width:370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, 0.712);
+    margin:5px;
+    margin-right:10px;
+    height: max-content;
+    
+}
+.problem__smallLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:70%;
+}
+.problem__smallBody{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    text-align: left;
+    padding:10px 5px 10px 5px;
+}
+.problem__smallBody > span{
+    width: fit-content;
+    padding: 4px;
+    margin: 3px 3px 0px 3px;
+    background-color: rgba(211, 211, 211, 0.39);
+    color:black;
+    border-radius: 5px;
+}
+
+.problem__smallHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 130%;
+    font-family: norwester;
+}
+.heading__left{
+    width:20%;
+}
+.heading__right{
+    width:80%;
+}
+.problem__smallRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:30%;
+    font-family: poiret;
+    font-weight:bolder;
+}
+
+.img{
+    width:100%;
+}
+.img > img{
+    width:30%;
+}
+
+
+
+.EASY{
+    background-image: url('./easy.png');
+    background-size: cover;
+}
+.MEDIUM{
+    background: url('./medium.png');
+    background-size: cover;
+}
+.HARD{
+    background:url('./hard.png');
+    background-size: cover;
+}
+

@@ -1,0 +1,157 @@
+
+
+.problems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+    height: 100%;
+    padding:20px 0px 0px 0px;
+}
+.problems__left{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+}
+.problems__right{
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+}
+
+.problems__nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.problems__problems{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:30px
+}
+
+.problems__right2{
+    background-color: #353535;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+    width:100%;
+}
+.problems__rightRight{
+    width:30%;
+}
+.problems__rightLeft{
+    width:70%;
+    font-size: 140%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: norwester;
+}
+.problems__rightRight > img{
+    width:70%;
+}
+
+.hide{
+    display: none;
+}
+
+.problems__navHeading{
+    width:fit-content;
+    width:20%;
+    font-size: 110%;
+}
+.smaller{
+    width:5%;
+}
+.greater{
+    width:50%;
+    text-align: center;
+}
+
+.filter{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:50px auto 20px auto;
+}
+
+.filter__heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+}
+.filter__headingL{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:10%;
+    font-size: 150%;
+    font-family: poiret;
+    font-weight: bolder;
+}
+.filter__headingC{
+    width:35%;
+}
+.filter__headingC > img{
+    width:30%;
+}
+.filter__body{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    margin:10px 0px 10px 0px;
+}
+.filter__body1{
+    width:100%;
+    font-size: 130%;
+    font-family: poiret;
+    font-weight: bolder;
+}
+
+input[type="checkbox"]{
+    position:fixed;
+    bottom: 0px;
+    left:0px;
+    opacity:0
+}
+
+input[type="checkbox"]:checked~label{
+    background-color: #353535;
+    color: white;
+    font-family: poiret;
+    font-weight: bolder;
+
+}
+.filter__body2{
+    width: 100%;
+    margin:30px 0px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.filter__body2>div{
+    width: 30%;
+}
+label{
+    width: 33%;
+    padding:10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 110%;
+    font-family: poiret;
+}
+
+
+/*Problem__small*/
+
